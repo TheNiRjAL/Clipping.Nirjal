@@ -1,0 +1,148 @@
+.container {
+  background: rgba(30, 41, 82, 0.4);
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px 0;
+}
+
+.container h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #e0e6ff;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #cbd5e0;
+  font-size: 14px;
+}
+
+.buttonGroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 8px;
+}
+
+.buttonGroup button {
+  padding: 10px 16px;
+  background: rgba(45, 55, 72, 0.5);
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  border-radius: 8px;
+  color: #cbd5e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.buttonGroup button:hover {
+  border-color: #4f46e5;
+  background: rgba(79, 70, 229, 0.1);
+}
+
+.buttonGroup button.active {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+  border-color: #6366f1;
+  color: #fff;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  background: rgba(45, 55, 72, 0.5);
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  border-radius: 8px;
+  color: #cbd5e0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+select:hover {
+  border-color: #4f46e5;
+}
+
+select:focus {
+  outline: none;
+  border-color: #6366f1;
+  background: rgba(45, 55, 72, 0.8);
+}
+
+input[type='range'] {
+  width: 100%;
+  cursor: pointer;
+  accent-color: #4f46e5;
+}
+
+input[type='checkbox'] {
+  margin-right: 8px;
+  cursor: pointer;
+  accent-color: #4f46e5;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.subsection {
+  background: rgba(15, 23, 42, 0.5);
+  border-left: 3px solid #4f46e5;
+  padding: 16px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.subsection > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.advancedToggle {
+  width: 100%;
+  padding: 12px;
+  background: rgba(45, 55, 72, 0.5);
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  border-radius: 8px;
+  color: #cbd5e0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.advancedToggle:hover {
+  border-color: #4f46e5;
+  background: rgba(79, 70, 229, 0.1);
+}
+
+.advancedSection {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 12px;
+}
+
+.gridRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.gridRow > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.gridRow > div label {
+  margin-bottom: 8px;
+}
