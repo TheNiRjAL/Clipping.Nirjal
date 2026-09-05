@@ -1,0 +1,9 @@
+# Fallback to index.html for SPA routing
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
