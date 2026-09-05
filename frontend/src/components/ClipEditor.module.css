@@ -1,0 +1,192 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: linear-gradient(135deg, #1a2955 0%, #2a1f5a 100%);
+  border: 1px solid rgba(79, 70, 229, 0.3);
+  border-radius: 16px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 1px solid rgba(79, 70, 229, 0.2);
+  background: rgba(79, 70, 229, 0.05);
+}
+
+.header h2 {
+  color: #e0e6ff;
+  font-size: 20px;
+  margin: 0;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: #a0aec0;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.closeButton:hover {
+  color: #e0e6ff;
+}
+
+.content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section h3 {
+  color: #cbd5e0;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.timingRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.timingRow > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.timingRow label {
+  font-size: 12px;
+  color: #a0aec0;
+  margin-bottom: 6px;
+}
+
+.timingRow input {
+  padding: 8px;
+  background: rgba(45, 55, 72, 0.5);
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  border-radius: 6px;
+  color: #e0e6ff;
+  font-size: 14px;
+}
+
+.timingRow input:disabled {
+  opacity: 0.6;
+}
+
+.buttonGroup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.buttonGroup button {
+  padding: 10px;
+  background: rgba(45, 55, 72, 0.5);
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  border-radius: 8px;
+  color: #cbd5e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.buttonGroup button:hover {
+  border-color: #4f46e5;
+  background: rgba(79, 70, 229, 0.1);
+}
+
+.buttonGroup button.active {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+  border-color: #6366f1;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.grid > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid label {
+  font-size: 12px;
+  color: #a0aec0;
+  margin-bottom: 6px;
+}
+
+.grid input[type='range'] {
+  cursor: pointer;
+  accent-color: #4f46e5;
+}
+
+.footer {
+  display: flex;
+  gap: 12px;
+  padding: 24px;
+  border-top: 1px solid rgba(79, 70, 229, 0.2);
+  background: rgba(79, 70, 229, 0.05);
+}
+
+.cancelButton {
+  flex: 1;
+  padding: 12px;
+  background: rgba(45, 55, 72, 0.5);
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  border-radius: 8px;
+  color: #cbd5e0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancelButton:hover {
+  border-color: #4f46e5;
+  background: rgba(79, 70, 229, 0.1);
+}
+
+.renderButton {
+  flex: 1;
+  padding: 12px;
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.renderButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+}
