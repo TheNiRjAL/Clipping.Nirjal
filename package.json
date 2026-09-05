@@ -1,8 +1,7 @@
 {
-  "name": "viralclip-ai",
-  "version": "1.0.0",
-  "description": "ViralClip AI - Turn long videos into short-form viral content",
+  "name": "viralclip",
   "type": "module",
+  "version": "1.0.0",
   "scripts": {
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "cd backend && npm run dev",
@@ -13,10 +12,7 @@
     "start": "npm run start:backend",
     "start:backend": "cd backend && npm start"
   },
-  "keywords": ["video", "AI", "short-form", "viral", "clips", "FFmpeg", "Gemini"],
-  "author": "TheNiRjAL",
-  "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "concurrently": "^8.2.2"
   }
 }
